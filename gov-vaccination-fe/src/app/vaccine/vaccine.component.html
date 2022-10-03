@@ -1,0 +1,169 @@
+
+<div class="container">
+  <mat-card>
+      <mat-card-title>Covid -19 Vaccination Stastics </mat-card-title>
+      <mat-card-subtitle>Total number of COVID vaccinations recorded as given ,by type of dose</mat-card-subtitle>
+      <img mat-card-image src="./../assets/image.jpg">
+      <div class="p-4">
+        <div class="container">
+          
+         <h1>Hi  </h1> 
+         <!-- <p><a routerLink="/users">Manage UsersRegistrations</a></p> -->
+      
+        </div>
+      </div>
+      
+     <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="75px">
+          <div fxFlex="25%">
+            <mat-card class="mat-elevation-z4" >
+              <mat-card-content>
+                <p class="lead">Partially Vaccinated  </p>
+              </mat-card-content>
+      <mat-card-header >
+        <mat-card-title >Covaccine FirstDose:{{userstatistics.user_vaccinatedType.Covaccine_Firstdose_Completed}}  </mat-card-title>
+      </mat-card-header>
+  <br>
+  <mat-card-header>
+  <!--<mat-card-title>Covaccine SecondDose:{{userstatistics.user_vaccinatedType.Covaccine_Fullyvaccinated}}  </mat-card-title> -->
+     <mat-card-title>CovidShield FirstDose:{{userstatistics.user_vaccinatedType.CovidShield_Firstdose_Completed}} </mat-card-title>
+  
+      </mat-card-header>
+      <br>
+             
+     </mat-card>
+        <br>
+  
+          
+          </div>
+        </div>
+        </div>
+  
+        <div class="content">
+          <div fxLayout="row wrap" fxLayoutGap="75px">
+            <div fxFlex="25%" >
+              <mat-card class="mat-elevation-z4" >
+        
+                <mat-card-content>
+                  <p class="lead">Fully Vaccinated  </p>
+                </mat-card-content>               
+        <mat-card-header>
+          <!-- <mat-card-title>CovidShield FirstDose:{{userstatistics.user_vaccinatedType.CovidShield_Firstdose_Completed}} </mat-card-title> -->
+         <mat-card-title>Covaccine SecondDose:{{userstatistics.user_vaccinatedType.Covaccine_Fullyvaccinated}}  </mat-card-title>
+        </mat-card-header>
+         <br>
+          <mat-card-header>
+          <mat-card-title>CovidShield SecondDose:{{userstatistics.user_vaccinatedType.CovidShield_Fullyvaccinated}} </mat-card-title>
+        </mat-card-header>
+        <br>      
+     </mat-card>
+          <br> 
+            </div>
+          </div>
+          </div>
+         
+  
+  <br>
+  
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="75px">
+      <div fxFlex="25%" >
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-content>
+            <p class="lead">Totaldoses Vaccinated  </p>
+          </mat-card-content>
+  <mat-card-header >
+    <mat-card-title  style="text-align:center">Total Strength:{{userstatistics.totalDosageStrength}}  </mat-card-title>
+  </mat-card-header>
+  <br>
+         
+  </mat-card>
+    <br>
+  
+      
+      </div>
+    </div>
+    </div>
+  
+  
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="15px" fxLayoutAlign="start center">
+      <div fxFlex="25%">
+        <mat-card class="mat-elevation-z4" >
+        
+          <mat-card-content>
+            <p class="lead">Gender Vaccinated  </p>
+          </mat-card-content>
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <mat-card-title style="text-align:center"  fxFlex="60%">Male :{{userstatistics.MALE}} </mat-card-title>
+    <mat-card-title style="text-align:center" fxFlex="40%"> Female:{{userstatistics.FEMALE}} </mat-card-title>
+  </div>
+  </mat-card>
+  
+  <br>
+  
+  </div>
+  </div>
+  </div>
+  
+  
+  <mat-card-title style="text-align:center">AEFI-Cases : {{userstatistics.AEFI_cases}}</mat-card-title>
+  
+  <br>
+  
+  
+  
+  
+  <mat-card-title style="text-align:center">24-Hours:{{userstatistics.twentyfourhours}}</mat-card-title>
+  <br>
+  <mat-card-title style="text-align:center">2-Days:{{userstatistics.twodays}}</mat-card-title>
+  <br>
+  
+  
+  <mat-card-title style="text-align:center">1-Month:{{userstatistics.onemonth}}</mat-card-title>
+  
+  
+  </mat-card> 
+    <br>
+   
+  
+  
+    </div> 
+   
+  
+  
+  
+  
+  
+    <hr>
+  
+  <!-- <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px">
+      <div fxFlex="30%" *ngFor ="let userdoses of userdoses">
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title style="text-align:center">VaccinationId:{{userdoses.uservaccinationId}}</mat-card-title>
+           
+            <mat-card-title style="text-align:center">RegistrationId:{{userdoses.userRegistrationId}}</mat-card-title>
+  
+            <mat-card-title style="text-align:center">VaccinationType:{{userdoses.uservaccinationType}}</mat-card-title>
+            <mat-card-title style="text-align:center">FirstDose:{{userdoses.userFirstDose}}</mat-card-title>
+            <mat-card-title style="text-align:center">SecondDose:{{userdoses.userSecondDose}}</mat-card-title>
+            <mat-card-title style="text-align:center">AEFIpostFirstdosedescription:{{userdoses.userAEFIpostFirstdosedescription}}</mat-card-title>
+            <mat-card-title style="text-align:center">AEFIpostFirstdose:{{userdoses.userAEFIpostFirstdose}}</mat-card-title>
+  
+            <br>
+  
+              <p>{{view.description}}</p> 
+            <mat-card-title style="text-align:center">News:{{view.description}}</mat-card-title>  
+  
+          </mat-card-header>
+          
+        </mat-card>
+      </div>
+    </div>
+    </div> -->
+   
+  
+  
+  

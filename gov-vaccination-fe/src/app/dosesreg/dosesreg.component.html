@@ -1,0 +1,78 @@
+<p>dosesreg works!</p>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>DoseRegister</mat-card-title>
+      </mat-card-header>
+      <form  (ngSubmit)="onSubmited()">
+ 
+          <mat-form-field class="example-full-width">
+            <input matInput  type="number" placeholder="RegistrationId" 
+             name="userRegistrationId"
+            [(ngModel)] ="dose.userRegistrationId">
+          </mat-form-field><br>
+
+
+          <mat-card-content>
+            <mat-form-field class="example-full-width" >
+              <input  type="text"  matInput placeholder="UserVaccinationType"
+              id="uservaccinationType"
+           [(ngModel)] ="dose.uservaccinationType" name="uservaccinationType">
+            </mat-form-field> <br> 
+           
+
+
+          <mat-form-field class="example-full-width">
+            <input matInput  placeholder="FirstDose">
+
+          <mat-radio-group aria-label="Select an FirstDose" type ="radio" name=" userFirstDose" placeholder="UserFirstDose" 
+          [(ngModel)] ="dose. userFirstDose">
+            <mat-radio-button value="True">true </mat-radio-button>
+            <mat-radio-button value="False">false </mat-radio-button>
+          </mat-radio-group>
+        </mat-form-field>
+
+
+
+
+        <mat-form-field class="example-full-width">
+          <input matInput  placeholder="SecondDose">
+
+        <mat-radio-group aria-label="Select an SecondDose" type ="radio" name=" userSecondDose" placeholder="UserFirstDose" 
+        [(ngModel)] ="dose. userSecondDose">
+          <mat-radio-button value="True">true </mat-radio-button>
+          <mat-radio-button value="False">false </mat-radio-button>
+        </mat-radio-group>
+      </mat-form-field>
+
+      
+      <mat-card-content>
+        <mat-form-field class="example-full-width" >
+          <input  type="text"  matInput placeholder="AEFIpostFirstdosedescription"
+          id="userAEFIpostFirstdosedescription"
+       [(ngModel)] ="dose.userAEFIpostFirstdosedescription" name="userAEFIpostFirstdosedescription">
+        </mat-form-field> <br> 
+
+      <mat-form-field class="example-full-width">
+        <input matInput  placeholder="AEFIpostFirstdose">
+
+      <mat-radio-group aria-label="Select an AEFIpostFirstdose" type ="radio" name=" userAEFIpostFirstdose" placeholder="AEFIpostFirstdose" 
+      [(ngModel)] ="dose. userAEFIpostFirstdose">
+        <mat-radio-button value="True">true </mat-radio-button>
+        <mat-radio-button value="False">false </mat-radio-button>
+      </mat-radio-group>
+    </mat-form-field>
+
+          
+         
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn btn-success" type="onSubmited">Register</button>
+        <!-- <a class="m-3" [routerLink]="'/home'"> Login</a> -->
+        <!-- <button mat-stroked-button color="accent" class="btn btn-success m-3" >LogIn</button> -->
+      <!-- </form> -->
+    <!-- </mat-card> -->
+  <!-- </div> -->
+
+
+
+  

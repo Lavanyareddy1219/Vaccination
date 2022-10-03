@@ -1,0 +1,170 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <h1>C19</h1>
+      <span class="menu-spacer"></span>
+      <div>
+
+        <a mat-button [routerLink]="'/home'"> Home </a>
+        <a mat-button [routerLink]="'/user'">  User </a>
+        <a mat-button [routerLink]="'/vaccine'"> Vaccines </a>
+        <a mat-button [routerLink]="'/doses'"> DoseRegister </a>
+
+        <a mat-button [routerLink]="'/news'"> News </a>
+        <a mat-button [routerLink]="'/helpdesk'">HelpDesk </a>
+        <a mat-button [routerLink]="'/faq'"> FAQ  </a>
+        <a mat-button [routerLink]="'/contactus'"> ContactUs </a>
+        <a mat-button [routerLink]="'/register'"> SignUp </a>
+
+
+        <a mat-button [routerLink]="'/userlogin'"> Logout </a>
+
+        <!-- <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>close</a> -->
+
+  
+      </div>
+    </mat-toolbar-row>
+  
+    <mat-toolbar-row>
+        <span style="font-size: 12px;">C19 dashboard helps you  to dispaly vaccination details   </span>
+      </mat-toolbar-row>
+  </mat-toolbar>
+
+  <!-- start -->
+ 
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+
+      <a mat-list-item [routerLink]="'/home'"> Home </a>
+      <a mat-list-item [routerLink]="'/user'"> User </a>
+      <a mat-list-item [routerLink]="'/vaccine'"> Vaccines </a>
+      <a mat-list-item [routerLink]="'/doses'"> DoseRegister </a>
+
+      <a mat-list-item [routerLink]="'/news'"> News </a>
+      <a mat-list-item [routerLink]="'/helpdesk'"> HelpDesk </a>
+      <a mat-list-item [routerLink]="'/faq'"> FAQ </a>
+      <a mat-list-item [routerLink]="'/contactus'"> ContactUs </a>
+      <a mat-list-item [routerLink]="'/register'"> SignUp </a>
+
+      <a mat-list-item [routerLink]="'/userlogin'"> Logout </a>
+
+      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+
+
+
+
+
+
+   
+
+      <router-outlet></router-outlet>
+      <!-- Footer -->
+<footer class="bg-secondary text-white text-center text-md-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+
+        <p>
+         Have Questions ?
+
+        </p>
+        <a href="contactus" class="text-white">ContactUs </a>
+
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <!-- <h5 class="text-uppercase">Links</h5> -->
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="home" class="text-white">Home </a>
+          </li>
+          <li>
+            <a href="user" class="text-white">User</a>
+          </li>
+          <li>
+            <a href="vaccine" class="text-white">Vaccine</a>
+          </li>
+          <li>
+            <a href="news" class="text-white">News</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <!-- <h5 class="text-uppercase mb-0">Links</h5> -->
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="helpdesk" class="text-white">HelpDesk</a>
+          </li>
+          <li>
+            <a href="faq" class="text-white">FAQ</a>
+          </li>
+          <li>
+            <a href="userlogin" class="text-white">Login</a>
+          </li>
+          <!-- <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li> -->
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://govt-vaccination.com/">COVID-19.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+  <!-- end -->
+<!-- <router-outlet></router-outlet> -->
+ <!-- <app-vaccine></app-vaccine> -->
+ <!-- <app-user></app-user> -->
+ <!-- <app-home></app-home> -->
+ <!-- <app-helpdesk></app-helpdesk> -->
+ <!-- <app-news></app-news> -->
+ <!-- <app-faq></app-faq> -->
+ <!-- <app-userlogin></app-userlogin> -->
+
+
+
+
+
+
+
+
+
+ 
+

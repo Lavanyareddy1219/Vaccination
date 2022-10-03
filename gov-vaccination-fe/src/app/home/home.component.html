@@ -1,0 +1,67 @@
+<img mat-card-image style="  width: 100%;height:400px;
+                                background-size: 100% 100%;" src="./../assets/image.jpg">
+
+<div class="p-4">
+  <div class="container">
+   <h1>Hi {{login.userEmail}}!</h1>
+   <!-- <h1>Hi User Manasa</h1>  -->
+      <p><a routerLink="/users">Manage UsersRegistrations</a></p>
+  <!-- <img mat-card-image src="./../assets/image.jpg"> -->
+
+  </div>
+</div>
+
+
+<div _ngcontent-lsm-c116="" class="corbevax_vaccine">
+    <div _ngcontent-lsm-c116="" class="container-fluid">
+        <div _ngcontent-lsm-c116="" class="container">
+            <div _ngcontent-lsm-c116="" class="row align-items-center">
+                <div _ngcontent-lsm-c116="" class="col-md-7 col-lg-7 pl-md-0 pl-lg-0 text-left text-md-left text-lg-left order-2 order-md-1 order-lg-1">
+                    <h3 _ngcontent-lsm-c116="" class="accessibility-plugin-ac mb-0 mt-5 mt-md-0 mb-3 text-center text-md-left text-lg-left"> Vaccination Dashboard</h3>
+                    <ul _ngcontent-lsm-c116="">
+                        <li _ngcontent-lsm-c116="">
+                            <p _ngcontent-lsm-c116="" class="accessibility-plugin-ac"> Covovax vaccine is now available for Children of the age group 12+ yrs in Private Vaccination Centre. The time span between first and second dose of Covovax is 21 days. Children can be administered with the second dose of Covovax within a month. </p>
+                        </li>
+                        <li _ngcontent-lsm-c116=""><p _ngcontent-lsm-c116="" class="accessibility-plugin-ac"> Children of the age group 12-14 yrs are now eligible for the Corbevax vaccine in Government Vaccination Centre and in Private Vaccination Centre 12+ yrs. The period between a first and second dose of Corbevax is 28 days. </p>
+                        </li>
+                        <li _ngcontent-lsm-c116=""><p _ngcontent-lsm-c116="" class="accessibility-plugin-ac"> Covaxin is available for Children of the age group of 15+ yrs in both Government and Private Vaccination Centre. Children must be completed 4 to 6 weeks after administration of the first dose of Covaxin to take the second dose of Covaxin. Both online and walk-in are available. </p>
+                        </li>
+                    </ul>
+                    <!-- <a _ngcontent-lsm-c116="" target="_blank" class="book_slot_btn accessibility-plugin-ac" href="https://selfregistration.cowin.gov.in">Book Your Slot</a> -->
+                </div>
+                <div _ngcontent-lsm-c116="" class="col-md-5 col-lg-5 order-1 order-md-2 order-lg-2 text-center">
+    <div class="login-wrapper " fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="box">
+          <mat-card-header>
+            <mat-card-title>Log in</mat-card-title>
+          </mat-card-header>
+          <form class="example-form" (ngSubmit)="onSubmited()">
+            <mat-card-content>
+                <div>
+
+                  <!-- <mat-card-content> -->
+          
+              <mat-form-field class="example-full-width">
+                <input type="email" matInput placeholder="Email"
+            
+                [(ngModel)] ="login.userEmail" name="userEmail">
+              </mat-form-field><br>
+
+            </div>
+              <mat-form-field class="example-full-width">
+                <input matInput type="text"   placeholder="Password"
+                [(ngModel)] ="login.userPassword" name="userPassword">
+              </mat-form-field>
+            </mat-card-content>
+           
+            <!-- <button mat-stroked-button color="accent" class="btn-block">Log in</button> -->
+          
+            <!-- <button mat-stroked-button color="accent" class="btn-block">Log in</button> -->
+             <button mat-stroked-button color="accent" class="btn btn-success m-3" type="onSubmited"  >Log in</button>
+             <a mat-list-item [routerLink]="'/register'"> SignUp </a>
+
+          </form>
+        </mat-card>
+      </div>
+</div></div></div></div></div>
+

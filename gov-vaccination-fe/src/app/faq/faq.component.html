@@ -1,0 +1,70 @@
+
+<div class="p-4">
+  <div class="container">
+    <img mat-card-image src="./../assets/image.jpg">
+
+  </div>
+</div>
+
+<!-- start -->
+ 
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <p>Frequently Asked Questions</p>
+      <!-- <mat-card-title>Frequently Asked Questions</mat-card-title> -->
+    </mat-card-header>
+    <form  (ngSubmit)="onSubmited() ">
+
+        <!-- <mat-form-field class="example-full-width">
+          <input matInput  type="number" placeholder="RegistrationId" 
+           name="userRegistrationId"
+          [(ngModel)] ="userreg.userRegistrationId">
+        </mat-form-field><br> -->
+
+
+        <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Question ?"
+          name="question"
+          [(ngModel)] ="faq.question">
+        </mat-form-field>
+      <!-- </div> -->
+      <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Answer..!"
+          name="answer"
+          [(ngModel)] ="faq.answer">
+        </mat-form-field>
+
+       
+      <button mat-stroked-button color="accent" class="btn btn-success" type="onSubmited">Submit</button>
+      <!-- <a class="m-3" [routerLink]="'/home'"> Login</a> -->
+      <!-- <button mat-stroked-button color="accent" class="btn btn-success m-3" >LogIn</button> -->
+    </form>
+  </mat-card>
+</div>
+
+
+<!-- end -->
+
+
+<div class="content  "  >
+  <div fxLayout="row wrap" fxLayoutGap="75px">
+    
+    <div fxFlex="90%"  class=" m-3"*ngFor ="let view of view">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          <mat-card-title style="text-align:center">Question:{{view.question}}</mat-card-title>
+          <mat-card-title style="text-align:center">Answer:{{view.answer}}</mat-card-title>
+
+          <br>
+
+      
+        </mat-card-header>
+        
+      </mat-card>
+    </div>
+  </div>
+  </div>
+ 
+
+  

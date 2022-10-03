@@ -1,0 +1,91 @@
+<div class="p-4">
+    <div class="container">
+      <img mat-card-image src="./../assets/image.jpg">
+
+     <!-- <h1>Hi {{user.userRegistrationId}}!</h1> -->
+     <h1>Hi User Manasa</h1> 
+
+
+        <p><a routerLink="/users">Manage UsersRegistrations</a></p>
+
+    </div>
+</div>
+
+
+
+
+<div class="content " >
+    <div fxLayout="row wrap" fxLayoutGap="16px">
+      <div fxFlex="30%" *ngFor ="let view of view">
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title style="text-align:center">News:{{view.newsId}}</mat-card-title>
+            <br>
+
+            <p>{{view.description}}</p>
+            <!-- <mat-card-title style="text-align:center">News:{{view.description}}</mat-card-title> -->
+
+          </mat-card-header>
+          
+        </mat-card>
+      </div>
+    </div>
+    </div>
+
+
+    <br>
+    <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="75px" >
+          <div fxFlex="25%" >
+            <mat-card class="mat-elevation-z4" >
+
+    
+      <mat-card-title style="text-align:center">News:{{newsstastics.description.description}}</mat-card-title>
+    <p >        
+         "SINOVAC Polio Vaccine Prequalified by WHO June 08, 2022 10:00 PM Eastern Daylight Time BEIJING—(BUSINESS WIRE)—SINOVAC Biotech Ltd. (NASDAQ: SVA) (“SINOVAC” or the “Company”), a leading provider of biopharmaceutical products in China, today announced that it received...!"
+    </p>
+      <br>
+             
+      </mat-card>
+        <br>
+    </div>
+</div>
+</div>
+
+
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="75px">
+      <div fxFlex="25%" >
+        <mat-card class="mat-elevation-z4" >
+        
+          <mat-card-content >
+            <p class="lead" >Total News  </p>
+          </mat-card-content>
+                   
+  <mat-card-header>
+    <mat-card-title  style="text-align:center">Total Strength:{{newsstastics.totalStrength}}  </mat-card-title>
+
+  </mat-card-header>
+
+   
+  <br>
+         
+  </mat-card>
+    <br>
+
+      
+      </div>
+    </div>
+    </div>
+
+
+   
+    
+<br>
+<mat-card-title style="text-align:center">24-Hours:{{newsstastics.twentyfourhours}}</mat-card-title>
+<br>
+<mat-card-title style="text-align:center">2-Days:{{newsstastics.twodays}}</mat-card-title>
+<br>
+<mat-card-title style="text-align:center">1-Month:{{newsstastics.onemonth}}</mat-card-title>
+
+ <br>

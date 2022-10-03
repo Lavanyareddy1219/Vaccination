@@ -1,0 +1,76 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+      <form  (ngSubmit)="onSubmited()">
+ 
+          <!-- <mat-form-field class="example-full-width">
+            <input matInput  type="number" placeholder="RegistrationId" 
+             name="userRegistrationId"
+            [(ngModel)] ="userreg.userRegistrationId">
+          </mat-form-field><br> -->
+
+
+          <mat-card-content>
+            <mat-form-field class="example-full-width" >
+              <input  type="text"  matInput placeholder="Username"
+              id="userUsername"
+           [(ngModel)] ="userreg.userUsername" name="userUsername">
+            </mat-form-field> <br> 
+
+
+            <mat-form-field class="example-full-width">
+              <input matInput  type="text" placeholder="Password" 
+               name=" userPassword"
+              [(ngModel)] ="userreg. userPassword">
+            </mat-form-field><br>
+
+           <mat-form-field class="example-full-width">
+            <input matInput  type="email" placeholder="Email" 
+             name="userEmail"
+            [(ngModel)] ="userreg.userEmail">
+          </mat-form-field><br>
+         
+
+          <mat-form-field class="example-full-width">
+            <input matInput  type="number" placeholder="Mobile" 
+             name="userMobile"
+            [(ngModel)] ="userreg.userMobile">
+          </mat-form-field><br>
+
+          <mat-form-field class="example-full-width">
+            <input matInput  placeholder="Gender">
+
+          <mat-radio-group aria-label="Select an Gender" type ="radio" name=" userGender" placeholder="Gender" 
+          [(ngModel)] ="userreg. userGender">
+            <mat-radio-button value="MALE">MALE </mat-radio-button>
+            <mat-radio-button value="FEMALE">FEMALE </mat-radio-button>
+          </mat-radio-group>
+        </mat-form-field>
+
+
+
+        <mat-form-field appearance="fill">
+          <mat-label >Choose an State</mat-label>
+          <mat-select type = "text" name="userState"  placeholder="State"  [(ngModel)] ="userreg.userState">
+            <mat-option value="andhra">andhra</mat-option>
+            <mat-option value="Karnataka">Karnataka</mat-option>
+            <mat-option value="Hyderabad">Hyderabad</mat-option>
+            <mat-option value="Delhi">Delhi</mat-option>
+            <mat-option value="Mumbai">Mumbai</mat-option>
+          </mat-select>
+        </mat-form-field>        
+          
+         
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn btn-success" type="onSubmited">Register</button>
+        <a class="m-3" [routerLink]="'/home'"> Login</a>
+        <!-- <button mat-stroked-button color="accent" class="btn btn-success m-3" >LogIn</button> -->
+      </form>
+    </mat-card>
+  </div>
+
+
+
+  
